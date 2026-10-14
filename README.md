@@ -71,6 +71,7 @@ Patients, caretakers, and rural healthcare clinics in and around Pandharpur freq
 | **Hosting** | Vercel Serverless Edge Platform |
 
 ---
+<img src="Assets/Screenshot 2026-10-15 022128.png" alt="Operations" />
 
 ## 📂 Project Structure
 
@@ -78,4 +79,6 @@ Patients, caretakers, and rural healthcare clinics in and around Pandharpur freq
 ├── index.html       # Primary portal markup & SPA views
 ├── styles.css       # Complete stylesheet (Strict 4px borders, clinical palette)
 ├── script.js        # Tab switching, delivery toggles, WhatsApp message builder
-└── README.md        # Technical documentation and specs
+└── README.md        # Technical documentation and specs.
+
+---
