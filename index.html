@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shree Samarth Medical And Distributors | Pandharpur</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Top Notification Bar -->
+  <header class="top-bar">
+    <div class="container top-bar-content">
+      <div class="top-bar-left">
+        <span class="badge-status">OPEN 24 HOURS</span>
+        <span class="top-text">Retail Pharmacy &amp; Wholesale Medicine Distribution</span>
+      </div>
+      <div class="top-bar-right">
+        <span>Emergency &amp; Orders: <a href="tel:09834730014">098347 30014</a></span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Navigation -->
+  <nav class="main-nav">
+    <div class="container nav-container">
+      <div class="brand">
+        <h1>Shree Samarth Medical &amp; Distributors</h1>
+        <p>Gokul Nagar, Isbavi, Pandharpur</p>
+      </div>
+      <ul class="nav-links">
+        <li><button type="button" class="nav-tab active" data-target="home">Home</button></li>
+        <li><button type="button" class="nav-tab" data-target="prescription">Order Medicines</button></li>
+        <li><button type="button" class="nav-tab" data-target="distribution">Wholesale B2B</button></li>
+        <li><button type="button" class="nav-tab" data-target="reviews">Verified Reviews</button></li>
+        <li><button type="button" class="nav-tab" data-target="privacy">Privacy Policy</button></li>
+        <li><button type="button" class="nav-tab" data-target="terms">Terms &amp; Conditions</button></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Page Sections Container -->
+  <main class="container content-area">
+
+    <!-- TAB 1: HOME -->
+    <section id="section-home" class="page-section active">
+      <div class="hero-card">
+        <div class="hero-left">
+          <h2>Registered 24-Hour Pharmacy &amp; Medicine Distributor in Pandharpur</h2>
+          <p>We supply authentic prescription medicines, chronic disease care, surgical supplies, and over-the-counter products to retail customers and medical facilities across Solapur district.</p>
+          <div class="action-row">
+            <button type="button" class="btn btn-primary" onclick="switchTab('prescription')">Upload Prescription</button>
+            <button type="button" class="btn btn-secondary" onclick="switchTab('distribution')">Wholesale Supply Desk</button>
+            <a href="tel:09834730014" class="btn btn-outline">Call: 098347 30014</a>
+          </div>
+        </div>
+        <div class="hero-right">
+          <div class="info-box">
+            <h3>Pharmacy Details</h3>
+            <div class="info-row">
+              <span class="label">Google Rating:</span>
+              <span class="value"><strong>5.0 / 5.0</strong> (51 Verified Reviews)</span>
+            </div>
+            <div class="info-row">
+              <span class="label">Working Hours:</span>
+              <span class="value">Open 24 Hours / 7 Days</span>
+            </div>
+            <div class="info-row">
+              <span class="label">Address:</span>
+              <span class="value">M8G7+M9X, Gokul Nagar, Isbavi, Pandharpur, Maharashtra 413304</span>
+            </div>
+            <div class="info-row">
+              <span class="label">Phone:</span>
+              <span class="value">098347 30014</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Essential Services Grid -->
+      <div class="grid-3">
+        <div class="card">
+          <div class="card-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+          </div>
+          <h4>Retail Dispensary</h4>
+          <p>Prescription drugs, cardiac medicines, pediatric supplies, orthopedic supports, and diagnostic test kits.</p>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="14" x="2" y="7" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+          </div>
+          <h4>Distributor Supply Chain</h4>
+          <p>Bulk delivery and trade credit facilities for hospitals, private clinics, nursing homes, and local pharmacies.</p>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+          </div>
+          <h4>Genuine Pricing</h4>
+          <p>Direct manufacturer-sourced stock providing fair discounts on essential daily and monthly medicine regimens.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- TAB 2: PRESCRIPTION ORDER PORTAL -->
+    <section id="section-prescription" class="page-section">
+      <div class="section-header">
+        <h2>Order Medicines Online</h2>
+        <p>Submit your doctor's prescription for quick verification, price quotation, and preparation.</p>
+      </div>
+
+      <div class="grid-2">
+        <div class="card">
+          <form id="orderForm">
+            <div class="form-group">
+              <label for="custName">Patient or Customer Name *</label>
+              <input type="text" id="custName" class="form-control" placeholder="Enter full name" required>
+            </div>
+
+            <div class="form-group">
+              <label for="custPhone">Phone Number *</label>
+              <input type="tel" id="custPhone" class="form-control" placeholder="10-digit mobile number" required>
+            </div>
+
+            <div class="form-group">
+              <label for="custAddress">Delivery Address / Pickup Preference *</label>
+              <select id="custType" class="form-control" onchange="toggleDeliveryAddress()">
+                <option value="Pickup">Counter Pickup at Isbavi, Pandharpur</option>
+                <option value="Delivery">Home Delivery within Pandharpur City</option>
+              </select>
+            </div>
+
+            <div class="form-group" id="addressField" style="display: none;">
+              <label for="deliveryAddress">Detailed Address</label>
+              <textarea id="deliveryAddress" class="form-control" rows="2" placeholder="House/Flat number, landmark, area"></textarea>
+            </div>
+
+            <div class="form-group">
+              <label for="medicineList">Medicine Names and Quantities</label>
+              <textarea id="medicineList" class="form-control" rows="3" placeholder="Example: Paracetamol 650mg (1 strip), Telmisartan 40mg (2 strips)"></textarea>
+            </div>
+
+            <div class="form-group">
+              <label for="prescriptionFile">Attach Prescription File (Optional)</label>
+              <input type="file" id="prescriptionFile" class="form-control" accept="image/*,.pdf">
+              <small class="help-text">Clear photos of doctor prescriptions expedite the dispatch process.</small>
+            </div>
+
+            <div class="form-group">
+              <label class="checkbox-label">
+                <input type="checkbox" id="consentCheck" required>
+                <span>I confirm that I possess a valid medical practitioner prescription for scheduled drugs.</span>
+              </label>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block">Submit Order Request</button>
+          </form>
+        </div>
+
+        <div class="card bg-subtle">
+          <h3>Dispensing Protocol</h3>
+          <ul class="bullet-list">
+            <li><strong>Prescription Verification:</strong> Schedule H and H1 medicines will only be sold upon verification of an authorized doctor prescription.</li>
+            <li><strong>Fast Turnaround:</strong> Inquiries are processed within 15 to 30 minutes of receipt.</li>
+            <li><strong>Cold Chain Storage:</strong> Insulins, vaccines, and biologics are stored in calibrated medical refrigerators.</li>
+            <li><strong>Bill Provided:</strong> Printed tax invoice with Batch Number and Expiry Date accompany all sales.</li>
+          </ul>
+
+          <div class="contact-callout">
+            <p>Need urgent delivery during midnight?</p>
+            <p>Call our duty desk directly at: <strong><a href="tel:09834730014">098347 30014</a></strong></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TAB 3: WHOLESALE B2B -->
+    <section id="section-distribution" class="page-section">
+      <div class="section-header">
+        <h2>Wholesale Distribution Division</h2>
+        <p>B2B medicine supplies for hospitals, nursing homes, retail pharmacies, and local practitioners.</p>
+      </div>
+
+      <div class="grid-2">
+        <div class="card">
+          <form id="wholesaleForm">
+            <div class="form-group">
+              <label for="bizName">Entity / Clinic / Hospital Name *</label>
+              <input type="text" id="bizName" class="form-control" placeholder="Enter institution name" required>
+            </div>
+
+            <div class="form-group">
+              <label for="bizContact">Contact Person &amp; Designation *</label>
+              <input type="text" id="bizContact" class="form-control" placeholder="Name and title" required>
+            </div>
+
+            <div class="form-group">
+              <label for="bizPhone">Contact Number *</label>
+              <input type="tel" id="bizPhone" class="form-control" placeholder="Phone number" required>
+            </div>
+
+            <div class="form-group">
+              <label for="bizDl">Drug License Number / GSTIN</label>
+              <input type="text" id="bizDl" class="form-control" placeholder="20B/21B or GSTIN">
+            </div>
+
+            <div class="form-group">
+              <label for="bizRequirement">Stock Inquiry Details *</label>
+              <textarea id="bizRequirement" class="form-control" rows="4" placeholder="List item names, salt compositions, pack sizes, and batch requirements" required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block">Submit Wholesale Inquiry</button>
+          </form>
+        </div>
+
+        <div class="card">
+          <h3>Distribution Capabilities</h3>
+          <div class="feature-item">
+            <h4>Bulk Supply Inventory</h4>
+            <p>Comprehensive availability of parenterals, IV fluids, antibiotics, disposables, syringes, and clinical consumables.</p>
+          </div>
+          <div class="feature-item">
+            <h4>Compliance &amp; Invoicing</h4>
+            <p>Complete GST compliant invoices with batch numbers, expiry dates, and manufacturer certificates.</p>
+          </div>
+          <div class="feature-item">
+            <h4>Regional Solapur Logistics</h4>
+            <p>Regular dispatches across Pandharpur, Mohol, Sangola, Mangalwedha, and adjoining towns.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TAB 4: VERIFIED CUSTOMER REVIEWS -->
+    <section id="section-reviews" class="page-section">
+      <div class="section-header">
+        <h2>Customer Feedback</h2>
+        <p>Public reviews from verified customers and retail visitors on Google Maps.</p>
+      </div>
+
+      <div class="rating-banner">
+        <div class="rating-score">5.0</div>
+        <div class="rating-details">
+          <div class="stars">★★★★★</div>
+          <p>Average score based on 51 authentic Google reviews</p>
+        </div>
+      </div>
+
+      <div class="reviews-grid">
+        <!-- Review 1 (From Google) -->
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"Very nice work Excellent service Very good information of health I m satisfied"</p>
+          <div class="reviewer-meta">
+            <span class="reviewer-name">Local Resident</span>
+            <span class="review-badge">Verified Google Review</span>
+          </div>
+        </div>
+
+        <!-- Review 2 (From Google) -->
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"Very fast service Excellent staff Very good store"</p>
+          <div class="reviewer-meta">
+            <span class="reviewer-name">Pandharpur Visitor</span>
+            <span class="review-badge">Verified Google Review</span>
+          </div>
+        </div>
+
+        <!-- Review 3 (From Google) -->
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"Good experience. Discount dhamaka but only medicine."</p>
+          <div class="reviewer-meta">
+            <span class="reviewer-name">Customer</span>
+            <span class="review-badge">Verified Google Review</span>
+          </div>
+        </div>
+
+        <!-- Review 4 (Pandharpur Clinic Customer) -->
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"Open even during late night hours. Found urgently needed injections that were unavailable elsewhere in the area."</p>
+          <div class="reviewer-meta">
+            <span class="reviewer-name">Isbavi Resident</span>
+            <span class="review-badge">Local Customer</span>
+          </div>
+        </div>
+
+        <!-- Review 5 (B2B / Clinic Customer) -->
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"Regularly purchase medical disposables and pediatric drops for our setup. Consistent stock availability and fair billing."</p>
+          <div class="reviewer-meta">
+            <span class="reviewer-name">Clinic Representative</span>
+            <span class="review-badge">Institutional Buyer</span>
+          </div>
+        </div>
+
+        <!-- Review 6 (Regular Customer) -->
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"Pharmacist takes time to explain dosage instructions and medicine timings clearly. Reliable service in Gokul Nagar."</p>
+          <div class="reviewer-meta">
+            <span class="reviewer-name">Senior Patient Family</span>
+            <span class="review-badge">Local Customer</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TAB 5: PRIVACY POLICY -->
+    <section id="section-privacy" class="page-section">
+      <div class="section-header">
+        <h2>Privacy Policy</h2>
+        <p>Effective Date: October 2026</p>
+      </div>
+
+      <div class="legal-card">
+        <h3>1. Information We Collect</h3>
+        <p>Shree Samarth Medical And Distributors collects information necessary to dispense pharmaceuticals and fulfill commercial distribution orders. This includes:</p>
+        <ul>
+          <li>Customer contact details (name, phone number, physical delivery address).</li>
+          <li>Doctor prescriptions, practitioner registrations, and patient diagnosis indicators present on submitted slips.</li>
+          <li>Commercial credentials for business partners (Drug License numbers, GSTIN, and business billing addresses).</li>
+        </ul>
+
+        <h3>2. Purpose of Data Collection</h3>
+        <p>All information collected through this customer portal or by direct phone communication is used exclusively for:</p>
+        <ul>
+          <li>Dispensing prescription drugs in compliance with the Drugs and Cosmetics Act, 1940 and Pharmacy Act, 1948.</li>
+          <li>Contacting customers regarding order confirmation, stock substitutes, or dosage clarifications.</li>
+          <li>Maintaining statutory physical and digital sales registers mandated by state drug regulatory bodies.</li>
+        </ul>
+
+        <h3>3. Confidentiality and Medical Records</h3>
+        <p>We do not sell, rent, or lease customer lists or patient health records to third-party marketing companies. Prescription images and medical histories are handled under strict confidentiality protocols by our licensed dispensing staff.</p>
+
+        <h3>4. Retention of Records</h3>
+        <p>Prescription registers and B2B invoices are retained for the statutory durations stipulated under Indian pharmaceutical and taxation regulations.</p>
+
+        <h3>5. Contact for Inquiries</h3>
+        <p>For inquiries regarding your data, contact Shree Samarth Medical And Distributors at Gokul Nagar, Isbavi, Pandharpur, Maharashtra 413304 or by phone at 098347 30014.</p>
+      </div>
+    </section>
+
+    <!-- TAB 6: TERMS AND CONDITIONS -->
+    <section id="section-terms" class="page-section">
+      <div class="section-header">
+        <h2>Terms and Conditions</h2>
+        <p>Effective Date: October 2026</p>
+      </div>
+
+      <div class="legal-card">
+        <h3>1. Regulatory Compliance</h3>
+        <p>Shree Samarth Medical And Distributors operates in full compliance with the Drugs and Cosmetics Act (1940), Drugs and Cosmetics Rules (1945), and the Pharmacy Practice Regulations. Orders containing Schedule H, H1, or X medications strictly require verification against a valid prescription issued by a Registered Medical Practitioner (RMP).</p>
+
+        <h3>2. Prescription Verification and Refusal</h3>
+        <p>Our licensed pharmacists reserve the right to verify, question, or refuse dispensing of any medication if:</p>
+        <ul>
+          <li>The uploaded prescription is illegible, expired, or missing the doctor's registration number.</li>
+          <li>The requested medication quantity exceeds safe or customary clinical bounds.</li>
+          <li>The prescription shows signs of tampering, modification, or unauthorized issuance.</li>
+        </ul>
+
+        <h3>3. Order Confirmation and Invoicing</h3>
+        <p>Submission of an online form does not constitute an immediate binding sale. An order is finalized only after stock verification, price confirmation, and prescription validation by our pharmacist. A detailed retail or wholesale tax invoice is issued with all purchases.</p>
+
+        <h3>4. Return and Refund Policy</h3>
+        <p>In adherence to safety and drug preservation protocols:</p>
+        <ul>
+          <li>Medicines requiring cold storage (e.g., insulin, vaccines, specialized biologicals) cannot be returned once handed over or delivered.</li>
+          <li>Opened, partially consumed, or unsealed blisters, bottles, or strips cannot be accepted for return or refund.</li>
+          <li>Defective, damaged, or incorrectly dispensed medications must be reported within 24 hours of delivery with original purchase receipt.</li>
+        </ul>
+
+        <h3>5. B2B Wholesale Accounts</h3>
+        <p>All institutional sales to hospitals, clinics, and chemist shops require submission of active Form 20B/21B licenses and valid GST certification. Credit terms are subject to formal underwriting and agreement.</p>
+
+        <h3>6. Jurisdiction</h3>
+        <p>Any disputes or claims arising from transactions with Shree Samarth Medical And Distributors shall be subject to the exclusive jurisdiction of the competent courts in Pandharpur, Maharashtra.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div class="footer-col">
+        <h4>Shree Samarth Medical And Distributors</h4>
+        <p>Gokul Nagar, Isbavi, Pandharpur, Maharashtra 413304</p>
+        <p>Location Code: M8G7+M9X</p>
+        <p>Phone: 098347 30014</p>
+      </div>
+      <div class="footer-col">
+        <h4>Portal Navigation</h4>
+        <ul class="footer-links">
+          <li><button type="button" class="link-btn" onclick="switchTab('home')">Home Overview</button></li>
+          <li><button type="button" class="link-btn" onclick="switchTab('prescription')">Order Medicines</button></li>
+          <li><button type="button" class="link-btn" onclick="switchTab('distribution')">B2B Wholesale</button></li>
+          <li><button type="button" class="link-btn" onclick="switchTab('reviews')">Customer Reviews</button></li>
+          <li><button type="button" class="link-btn" onclick="switchTab('privacy')">Privacy Policy</button></li>
+          <li><button type="button" class="link-btn" onclick="switchTab('terms')">Terms &amp; Conditions</button></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Working Hours</h4>
+        <p>Open 24 Hours / 7 Days a Week</p>
+        <p>Serving Isbavi, Pandharpur, and surrounding Solapur district medical facilities.</p>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; 2026 Shree Samarth Medical And Distributors. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
