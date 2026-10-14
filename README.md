@@ -72,7 +72,7 @@ Patients, caretakers, and rural healthcare clinics in and around Pandharpur freq
 
 ---
 
-<kbd><img src="Assets/Screenshot 2026-10-15 022128.png" width="475" alt="Operations" /></kbd> <kbd><img src="Assets/Screenshot 2026-10-15 022140.png" width="470" alt="Operations" /></kbd>
+<kbd><img src="Assets/Screenshot 2026-10-15 022128.png" width="450" alt="Operations" /></kbd> <kbd><img src="Assets/Screenshot 2026-10-15 022140.png" width="445" alt="Operations" /></kbd>
 
 
 ## 📂 Project Structure
